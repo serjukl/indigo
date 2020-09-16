@@ -1,0 +1,88 @@
+@import "styles/sassSetup"
+
+.nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: calc(100% - 60px)
+  padding: 0 30px
+  position: fixed
+  background-color: $primary-color
+  a
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: $accent-color
+    width: 140px
+    text-decoration: none
+    svg
+      path, circle
+        transition: .3s
+    h2
+      transition: .3s
+      text-transform: uppercase
+    &:hover
+      svg
+        path
+          fill: $contrast-color
+        circle
+          stroke: $contrast-color
+          &:first-child
+            fill: $contrast-color
+      h2
+        color: $contrast-color
+  ul
+    list-style: none
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 600px
+    height: 100%
+    margin: 0
+    padding: 0
+    li
+      a
+        font-size: 20px
+        transition: .3s
+        line-height: 60px
+        width: auto
+        &:hover
+          color: $contrast-color
+
+.navigationIcons
+  display: none
+
+@media screen and (max-width: 900px)
+  .nav
+    ul
+      display: none
+      flex-direction: column
+      justify-content: center
+    .mobOpen
+      display: flex
+      height: 100%
+      width: 100%
+      position: fixed
+      background-color: rgba(0,0,0,.9)
+      top: 0
+      left: 0
+      li
+        a
+          display: block
+          width: 100%
+          padding: 25px
+
+  .navigationIcons
+    display: flex
+    cursor: pointer
+    position: absolute
+    right: 30px
+    z-index: 3
+    svg
+      path
+        transition: .3s
+        fill: $accent-color
+      &:hover
+        path
+          fill: $contrast-color
+
