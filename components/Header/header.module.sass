@@ -1,0 +1,17 @@
+.mainScreen
+  padding-top: 60px
+  height: calc(100vh - 60px)
+  animation-name: slider
+  animation-duration: 6s
+  animation-iteration-count: infinite
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+@keyframes slider
+  from
+    background-image: url("../../public/images/background1.jpg")
+  50%
+    background-image: url("../../public/images/background2.jpeg")
+  to
+    background-image: url("../../public/images/background1.jpg")

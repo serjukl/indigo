@@ -56,7 +56,7 @@ const Nav = () => {
                         <path d="M28.6207 26.092L26.3793 27.386L26.3793 24.7979L28.6207 26.092Z" fill="#F57170"/>
                         <path d="M21.2644 26.092L23.5058 27.386L23.5058 24.7979L21.2644 26.092Z" fill="#F57170"/>
                     </svg>
-                    <h2>indigo</h2>
+                    <h3>indigo expert</h3>
                 </a>
             </Link>
             <ul className={navState ? styles.mobOpen : null}>
