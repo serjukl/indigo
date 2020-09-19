@@ -1,0 +1,268 @@
+.feedBackSection
+  background-color: white
+  h1
+    &:first-child
+      text-align: left
+    text-align: center
+    margin-top: 10px
+.downFeedMan
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 90%
+  margin-left: 20px
+  padding-bottom: 20px
+  p
+    font-size: 44px
+    line-height: 60px
+    letter-spacing: 0.05em
+    color: #F57170
+  button
+    padding: 10px 20px
+    cursor: pointer
+    width: 200px
+    font-weight: 600
+    letter-spacing: 0.1em
+    font-size: 25px
+    background-color: transparent
+    border: 1px solid #F57170
+    transition: .3s
+    color: #F57170
+    &:hover
+      border: 1px solid black
+      color: black
+
+.feedMain
+  background-color: #303841
+  padding-top: 100px
+  h1
+    font-size: 96px
+    line-height: 131px
+    letter-spacing: 0.1em
+    margin-left: 20px
+    color: #F57170
+
+
+.feedMessage
+  height: 200px
+  padding: 5px
+  margin-top: 20px
+.sendFeed
+  border: 1px solid #A9A9A9
+  background-color: transparent
+  color: #A9A9A9
+  font-size: 20px
+  cursor: pointer
+  margin-top: 20px
+  display: flex
+  align-self: flex-end
+  padding: 10px 55px
+  transition: .3s
+  text-transform: uppercase
+  &:hover
+    border: 1px solid #303841
+    color: #F57170
+    background-color: #303841
+
+.upFeedFrom
+  display: flex
+  justify-content: space-between
+  align-items: center
+  p
+    color: #A9A9A9
+
+.nameInput
+  border: 0
+  border-bottom: 2px solid #A9A9A9
+  font-size: 20px
+  width: 200px
+
+.checkBoxCustom
+  margin-left: 5px
+  border: 1px solid #303841
+  border-radius: 50px
+  width: 40px
+  height: 20px
+  cursor: pointer
+
+.checkBoxCustomActive
+  .ball
+    margin-left: 21px
+
+
+
+
+.ball
+  width: 18px
+  transition: .3s
+  height: 18px
+  margin: 1px 2px
+  border-radius: 50px
+  background-color: #303841
+
+
+.feedMailInput
+  width: 100%
+  border: 0
+  border-bottom: 2px solid #A9A9A9
+  font-size: 20px
+  margin: 20px 0
+  outline: 0
+
+.upFeedFrom
+  p
+    transition: .3s
+
+
+
+.formFeedContainer
+  width: 400px
+  margin-top: 20px
+  display: flex
+  flex-direction: column
+  margin-left: calc(50% - 200px)
+  overflow: hidden
+  height: 0
+  transition: .3s
+
+.formFeedContainerActive
+  height: 400px
+
+
+
+.feedBackContainer
+  width: 800px
+  margin-left: calc(50% - 400px)
+
+
+.feedbackHeader
+  display: flex
+  padding-top: 40px
+  align-items: flex-end
+
+
+.nameOfPerson
+  font-size: 25px
+  color: #B78C6E
+
+.dataComment
+  font-size: 12px
+  color: #A9A9A9
+  margin-bottom: 3px
+  margin-left: 5px
+
+.message
+  border-left: 2px solid #303841
+  margin-left: 20px
+  margin-top: 5px
+  padding: 10px
+
+.responseHeader
+  display: flex
+  align-items: flex-end
+  h2
+    color: black
+    margin-left: 20px
+
+.refMenuFromFeed
+  background-color: black
+  width: 100%
+  margin-top: 20px
+
+.refMenuFromFeed
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+
+
+.btnGoToMenu2
+  text-decoration: none
+  color: #F57170
+  border: 1px solid #F57170
+  padding: 10px 30px
+  transition: .3s
+  outline: 0
+  display: block
+  &:hover
+    background-color: #F57170
+    color: black
+
+.textContainerRef
+  display: flex
+  flex-direction: column
+  padding: 20px 10px
+  h2
+    color: #F57170
+  p
+    color: #F57170
+    margin-top: 10px
+
+.responseContainer
+  .message
+    margin-left: 40px
+@media screen and (max-width: 1125px)
+  .downFeedMan
+    flex-direction: column
+    align-items: flex-start
+
+@media screen and (max-width: 1000px)
+  .feedBackContainer
+    padding: 0 20px
+    width: calc(100% - 40px)
+    margin: 0
+
+  .refMenuFromFeed
+    flex-direction: column
+
+  .btnGoToMenu2
+    margin-bottom: 20px
+@media screen and (max-width: 600px)
+  .feedMain
+    h1
+      margin: 0
+
+@media screen and (max-width: 550px)
+  .feedMain
+    h1
+      font-size: 60px
+  .downFeedMan
+    p
+      font-size: 30px
+
+@media screen and (max-width: 420px)
+  .nameOfPerson
+    font-size: 17px
+  .message
+    padding: 0 10px
+    font-size: 14px
+
+  .flowScreenForm
+    width: 100%
+
+  .formFeedContainer
+    width: 100%
+    margin: 0
+
+  .upFeedFrom
+    flex-direction: column-reverse
+    align-items: flex-end
+
+  .nameInput,.feedMailInput,.feedMessage
+    width: 96%
+    margin-left: 3%
+    align-self: flex-start
+
+@media screen and (max-width: 350px)
+  .feedMain
+    h1
+      line-height: 21px
+      font-size: 50px
+  .downFeedMan
+    p
+      font-size: 20px
+      line-height: 41px
+.dn
+  overflow: hidden
+  height: 0
+  transition: .3s
+  width: 0
