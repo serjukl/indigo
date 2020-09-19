@@ -7,11 +7,56 @@
   background-size: cover
   background-position: center
   background-repeat: no-repeat
+  h1
+    text-transform: uppercase
+    padding-left: 30px
+    width: 70vw
+    font-size: 10vw
+    background: linear-gradient(135deg, #F57170 0%, #3A4750 70%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+
+.bottomHeaderContainer
+  width: calc(100% - 60px)
+  padding: 0 30px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: absolute
+  bottom: 20px
+  a
+    text-decoration: none
+    color: white
+  div
+    width: 300px
+
 
 @keyframes slider
   from
     background-image: url("../../public/images/background1.jpg")
   50%
-    background-image: url("../../public/images/background2.jpeg")
+    background-image: url("../../public/images/image 4.jpg")
   to
     background-image: url("../../public/images/background1.jpg")
+
+@media screen and (max-width: 800px)
+  .mainScreen
+    h1
+      width: calc(100vw - 30px)
+      font-size: 12vw
+      padding-left: 0
+  .bottomHeaderContainer
+    flex-direction: column-reverse
+    svg
+      margin: 10px 0
+
+
+
+
+
+
+
+
+
+
