@@ -3,7 +3,7 @@ import styles from './production.module.sass'
 
 const Production = () => {
     return (
-            <div className={styles.pro}>
+            <div  className={styles.pro}>
                 <h1>наші послуги</h1>
                 <ul>
                     <li>Наші спеціалісти проводять діагностику приміщень та визначають проблему на обєктах вражених грибком та вологістю</li>

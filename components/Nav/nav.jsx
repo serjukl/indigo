@@ -39,13 +39,13 @@ const Nav = () => {
         },
         {
             name: 'Контакти',
-            link: '/works'
+            link: '/#contact'
         }
     ]
     return (
         <nav className={styles.nav}>
             <Link href="/">
-                <a onClick={isNavOpen}>
+                <a>
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="25" cy="1.89655" r="1.89655" fill="#F57170"/>
                         <circle cx="24.9426" cy="27.5862" r="19.8851" stroke="#F57170" strokeWidth="3.21839"/>

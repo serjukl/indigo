@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './goods.module.sass'
-const Goods = () => {
+const Goods = (props) => {
     return (
         <div className={styles.goods}>
             <div className={styles.imageGood}>
-                <img src={require('../../public/images/Rectangle 12.png')} alt={'good'}/>
+                <img src={props.item.src} alt={'good'}/>
             </div>
-            <h2>Товар товаруОпис 2</h2>
-            <p>Опис товаруОпис товаруОпис товаруОпис товаруОпис товаруОпис </p>
+            <h2>{props.item.title}</h2>
+            <p>{props.item.text}</p>
         </div>
     )
 }

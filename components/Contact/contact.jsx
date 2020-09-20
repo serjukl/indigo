@@ -5,12 +5,12 @@ const Contact = () => {
     return (
         <div className={styles.contact}>
             <div className={styles.mapContainer}>
-                <a href="#">вул. Максимовича 15 Івано-Франківськ</a>
+                <a href="#" id='contact'>вул. Максимовича 15 Івано-Франківськ</a>
             </div>
             <div className={styles.line} />
             <div className={styles.tellsContainer}>
-                <a href="tel:+380961827301">+380961827301</a>
-                <a href="tel:+380991800928">+380991800928</a>
+                <a href="tel:0977332783">0977332783</a>
+                <a href="tel:0668120205">0668120205</a>
             </div>
             <div className={styles.line} />
             <div className={styles.logo}>
