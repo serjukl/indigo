@@ -1,27 +1,55 @@
 .feedBackSubLink
   width: calc(100% - 60px)
   padding: 0 30px
-  height: 80px
+  height: 160px
   background: #3A4750
+
+  div
+    h2
+      text-align: center
+      text-transform: uppercase
+      font-size: 20px
+      color: #F57170
+
+    a
+      text-align: center
+      padding: 15px 0
+      border-radius: 5px
+      border: 1px solid #F57170
+      text-decoration: none
+      color: #F57170
+      width: 200px
+      height: 20px
+
+
+.feed
   display: flex
   justify-content: space-between
-  align-items: center
-  h2
-    text-transform: uppercase
-    font-size: 18px
-    text-align: center
-    color: #F57170
-  a
-    display: block
-    padding: 13px 20px
-    border-radius: 5px
-    border: 1px solid #F57170
-    text-decoration: none
-    color: #F57170
+  width: 100%
+  padding-top: 15px
 
-@media screen and (max-width: 800px)
+
+.partners
+  width: 100%
+  display: flex
+  justify-content: space-between
+  padding-top: 15px
+
+
+
+@media screen and (max-width: 750px)
   .feedBackSubLink
+    height: auto
+    div
+      h2
+        text-align: left
+
+  .feed
     flex-direction: column
     height: auto
     padding: 10px 30px
 
+  .partners
+    flex-direction: column
+    height: auto
+    padding: 10px 30px
