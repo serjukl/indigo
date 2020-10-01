@@ -5,6 +5,10 @@
   top: 50%
   margin: 20px
   border: 1px solid rgba(0,0,0,0.3)
+  &:hover
+    .hoverOut
+      opacity: 1
+      height: 250px
   h2
     font-size: 30px
     text-transform: uppercase
@@ -14,6 +18,8 @@
     color: #FFFFFF
     text-align: center
     padding: 10px 0
+    overflow: hidden
+
 
 .imageGood
   width: 240px
@@ -25,5 +31,41 @@
   img
     width: calc(100% - 10px)
 
+.hoverOut
+  opacity: 0
+  transition: .3s
+  position: absolute
+  background-color: rgba(0,0,0,0.9)
+  width: 250px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  p
+    color: #F57170
+  div
+    padding: 20px 0
+    display: flex
+    flex-direction: column
+    a
+      color: #F57170
+      padding: 10px 0
+      text-decoration: none
+    svg
+      margin-right: 5px
 
+
+
+.more
+  display: flex
+  justify-content: center
+
+
+  button
+    padding: 0
+    border: none
+    background-color: transparent
+    color: #F57170
+    cursor: pointer
+    outline: 0
 

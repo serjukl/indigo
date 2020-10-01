@@ -4,6 +4,7 @@ import style from "../styles/Home.module.sass";
 import Partners from "../components/Partners/partners";
 import Goods from "../components/Goods/goods";
 import Footer from "../components/Footer/footer";
+import Head from "next/head";
 
 const Partner = () => {
 const goodImages = [
@@ -30,7 +31,19 @@ const goodImages = [
         ]
 
         return (
-            <div>
+                <div>
+                    <Head>
+                        <meta charSet="utf-8"/>
+                        <title>Партнери компанії INDIGO EXPERT</title>
+                        <meta name="msapplication-TileColor" content="#000000"/>
+                        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+                        <meta name="theme-color" content="#000000"/>
+                        <meta name="description"
+                              content="INDIGO EXPERT - компанія, яка має надійних партнерів в місті Івано-Франківськ"/>
+                        <meta name="robots" content="index,follow"/>
+                        <meta name="keywords"
+                              content="партнери INDIGO EXPER, з якими компаніями співпрацює INDIGO EXPERT "/>
+                    </Head>
                 <Nav />
                 <section>
                     {

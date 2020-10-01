@@ -5,7 +5,7 @@ const Partners = (props) => {
         <div className={styles.goods}>
             <div className={styles.imageGood}>
                 <a href={'#'}>
-                <img src={props.item.src} alt={'good'}/>
+                <img src={props.item.src} alt={'Логотипи компаній партнерів'}/>
                 </a>
             </div>
             <h2>{props.item.title}</h2>

@@ -2,18 +2,32 @@ import React, {useState} from "react";
 import styles from '../styles/FeedBack.module.sass'
 import Link from "next/link";
 import Nav from "../components/Nav/nav";
-
+import Head from "next/head";
+import Contact from "../components/Contact/contact";
+import Footer from "../components/Footer/footer";
 const Feedback = () => {
-    const[setFeedState, setFeedStateHandler] = useState(false)
-    const[nameInput, nameInputHandler] = useState(null)
-    const[feedAnon, feedAnonHandler] = useState(false)
-    const[messageInput, messageInputHandler] = useState(null)
+    const [setFeedState, setFeedStateHandler] = useState(false)
+    const [nameInput, nameInputHandler] = useState(null)
+    const [feedAnon, feedAnonHandler] = useState(false)
+    const [messageInput, messageInputHandler] = useState(null)
     const sendComment = () => {
         alert('send')
     }
     return (
         <div className={styles.feedBackSection}>
-            <Nav /> 
+            <Head>
+                <meta charSet="utf-8"/>
+                <title>INDIGO EXPERT відгуки про нас</title>
+                <meta name="msapplication-TileColor" content="#000000"/>
+                <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+                <meta name="theme-color" content="#000000"/>
+                <meta name="description"
+                      content="INDIGO EXPERT - відгуки про нас та нашу роботу по знищенню грибка в місті Івано-Франківськ"/>
+                <meta name="robots" content="index,follow"/>
+                <meta name="keywords"
+                      content="INDIGO EXPERT відгуки, залишити відгук про INDIGO EXPERT, INDIGO відгуки"/>
+            </Head>
+            <Nav/>
             <div className={styles.feedMain}>
                 <h1>Відгуки</h1>
                 <div className={styles.downFeedMan}>
@@ -28,12 +42,12 @@ const Feedback = () => {
                 >
                     <div className={styles.upFeedFrom}>
                         <input
-                            onChange={(e) => nameInputHandler({name : e.target.value})}
+                            onChange={(e) => nameInputHandler({name: e.target.value})}
                             className={feedAnon ? `${styles.nameInput} ${styles.dn}` : styles.nameInput}
                             type='text'
                             placeholder="ім'я"
                         />
-                        <div style={{display:'flex',alignItem:'center'}}>
+                        <div style={{display: 'flex', alignItem: 'center'}}>
                             <p>Надіслати анонімно</p>
                             <div
                                 className={
@@ -43,23 +57,23 @@ const Feedback = () => {
                                 }
                                 onClick={() => feedAnonHandler(!feedAnon)}
                             >
-                                <div className={styles.ball} />
+                                <div className={styles.ball}/>
                             </div>
                         </div>
                     </div>
                     <textarea
                         placeholder="Ми завжди раді Вам"
                         className={styles.feedMessage}
-                        onChange={(e) => messageInputHandler({message : e.target.value})}
+                        onChange={(e) => messageInputHandler({message: e.target.value})}
                     >
-                        </textarea>
+                            </textarea>
                     <button onClick={sendComment} className={styles.sendFeed}>send</button>
                 </form>
             </div>
 
             <div className={styles.feedBackContainer}>
 
-                <div >
+                <div>
                     <div className={styles.feedbackHeader}>
                         <h2 className={styles.nameOfPerson}>Andry</h2>
                         <p className={styles.dataComment}>25.25.1220</p>
@@ -79,17 +93,17 @@ const Feedback = () => {
             </div>
             <div className={styles.refMenuFromFeed}>
                 <div className={styles.textContainerRef}>
-                    <h2>Скуштуйте та зробіть висновки</h2>
-                    <p>Зробіть замовлення</p>
+                    <h2>Виникли запитання?</h2>
+                    <p>Отримайте консультацію</p>
                 </div>
-                <Link  href='/'>
+                <Link href='/#contact'>
                     <a className={styles.btnGoToMenu2}>
-                        Перейти в меню
+                        Перейти до контанків
                     </a>
                 </Link>
             </div>
+        <Footer />
         </div>
     )
 }
-
-export default Feedback
+    export default Feedback

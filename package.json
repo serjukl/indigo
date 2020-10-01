@@ -8,8 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "firebase": "^7.21.1",
+    "firebase-tools": "^8.11.2",
     "next": "9.5.3",
     "next-images": "^1.5.0",
+    "next-redux-wrapper": "^6.0.2",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
     "react": "16.13.1",

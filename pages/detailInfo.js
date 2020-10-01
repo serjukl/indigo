@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Nav from "../components/Nav/nav";
 import styles from "../styles/detailInfo.module.sass";
 import Lightbox from "react-image-lightbox";
+import Head from "next/head";
 
 const DetailInfo = () => {
 
@@ -90,6 +91,18 @@ const DetailInfo = () => {
     ]
     return (
         <div >
+            <Head>
+                <meta charSet="utf-8"/>
+                <title>Додаткова інформація від компанії INDIGO EXPERT </title>
+                <meta name="msapplication-TileColor" content="#000000"/>
+                <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+                <meta name="theme-color" content="#000000"/>
+                <meta name="description"
+                      content="INDIGO EXPERT - компанія, яка відкрита у своїй діяльності і містить про себе всю детальну інформацію"/>
+                <meta name="robots" content="index,follow"/>
+                <meta name="keywords"
+                      content="INDIGO EXPERT справка, документація компанії INDIGO EXPERT, все про компанію INDIGO EXPERT м. Івано-Франківськ, додаткова інформація про  компанія знищення грибка ІФ  "/>
+            </Head>
             <Nav />
 
             <div className={styles.glBoxContainer} >
