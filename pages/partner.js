@@ -1,32 +1,34 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Nav from "../components/Nav/nav";
-import style from "../styles/Home.module.sass";
+import styles from "../styles/partner.module.sass";
 import Partners from "../components/Partners/partners";
-import Goods from "../components/Goods/goods";
 import Footer from "../components/Footer/footer";
 import Head from "next/head";
 
-const Partner = () => {
+const Partner = (props) => {
+    useEffect(() => {
+        console.log(props)
+    }, [])
 const goodImages = [
             {
                 src:'/images/image 5.jpg',
                 title:'Пенекрит',
-                text:'Пенекрит  - водонепроникний матеріал для гідроізоляції  швів та  тріщин в бетонних конструкціях при виконанні гідроізоляційних робіт.'
+                link:'/',
             },
             {
                 src:'/images/image 6.jpg',
                 title:'Пенетрон',
-                text:'Пенетрон  - проникаюча гідроізоляція для бетону ю Повищує показники  водонепроникності  ,  міцності та морозостійкості бетону.'
+                link:'/',
             },
             {
                 src:'/images/image 7.jpg',
                 title:'Поліфлюід',
-                text:'Поліфлюід  - являє собою безбарвний розчин глибокого проникнення для гідроізоляції пористих матеріалів. Він призначений для осушення поверхонь і захисту поверхонь від вологи  ,  не утворює плівки на поверхні, не змінює колір матеріалів, він містить антізамерзающіе і самоочищаються елементи, володіє фунгіцидними властивостями.'
+                link:'/',
             },
             {
                 src:'/images/image 8.jpg',
                 title:'E - Larix',
-                text:'Засіб "E - Larix" прекрасно діє проти різних форм цвілі, дріжджових грибків з  діючим  дезинфікуючим ефектом. Представлений в механічному розпилювачі, який забезпечує легку маніпуляцію і полегшує ліквідацію цвілі навіть в важкодоступних місцях.'
+                link:'/',
             },
         ]
 
@@ -45,7 +47,7 @@ const goodImages = [
                               content="партнери INDIGO EXPER, з якими компаніями співпрацює INDIGO EXPERT "/>
                     </Head>
                 <Nav />
-                <section>
+                <section className={styles.partnerContainer}>
                     {
                         goodImages.map((image, index) => {
                             return <Partners key={index} item={image} />

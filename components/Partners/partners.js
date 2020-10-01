@@ -2,15 +2,12 @@ import React from 'react';
 import styles from './partners.module.sass'
 const Partners = (props) => {
     return (
-        <div className={styles.goods}>
+        <a href={props.item.link} className={styles.partnerItem}>
             <div className={styles.imageGood}>
-                <a href={'#'}>
                 <img src={props.item.src} alt={'Логотипи компаній партнерів'}/>
-                </a>
             </div>
             <h2>{props.item.title}</h2>
-            <p>{props.item.text}</p>
-        </div>
+        </a>
     )
 }
 

@@ -132,6 +132,14 @@ const Works = () => {
         showTextIndexHandler(null)
     },[chosen])
 
+    const setKey = (key) => {
+        if (key === showTextIndex) {
+            showTextIndexHandler(null)
+        } else {
+            showTextIndexHandler(key)
+        }
+    }
+
     return (
         <>
             <Head>
@@ -179,7 +187,7 @@ const Works = () => {
                     text.map((title,key) => {
                         return (
                             <div key={key}>
-                                <div className={styles.infoTitleContainer} onClick={() => showTextIndexHandler(key)}>
+                                <div className={styles.infoTitleContainer} onClick={() => setKey(key)}>
                                     <h1>{title.title}</h1>
                                     <div className={styles.getMoreInfo}>
                                         <h5>Показати детальніше</h5>

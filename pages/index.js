@@ -3,7 +3,6 @@ import Head from "next/head";
 import Nav from "../components/Nav/nav";
 import Header from "../components/Header/header";
 import Production from "../components/Production/production";
-import FeedBackInput from "../components/FeedBackInput/feedBackInput"
 import Goods from "../components/Goods/goods";
 import style from '../styles/Home.module.sass'
 import FeedBackSubLink from "../components/FeedBackSubLink/feedBackSubLink";
