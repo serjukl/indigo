@@ -1,17 +1,19 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import styles from '../styles/FeedBack.module.sass'
 import Link from "next/link";
 import Nav from "../components/Nav/nav";
 import Head from "next/head";
 import Contact from "../components/Contact/contact";
 import Footer from "../components/Footer/footer";
+import firebase from "firebase";
 const Feedback = () => {
     const [setFeedState, setFeedStateHandler] = useState(false)
     const [nameInput, nameInputHandler] = useState(null)
     const [feedAnon, feedAnonHandler] = useState(false)
     const [messageInput, messageInputHandler] = useState(null)
-    const sendComment = () => {
-        alert('send')
+    const sendComment = (e) => {
+        e.preventDefault();
+        firebase.database().ref('comment').set(nameInput ? {name: nameInput, text: messageInput} : {text: messageInput});
     }
     return (
         <div className={styles.feedBackSection}>
@@ -39,6 +41,7 @@ const Feedback = () => {
             <div className={styles.flowScreenForm}>
                 <form
                     className={setFeedState ? `${styles.formFeedContainer} ${styles.formFeedContainerActive}` : styles.formFeedContainer}
+                    onSubmit={(e)=> sendComment(e)}
                 >
                     <div className={styles.upFeedFrom}>
                         <input
@@ -46,6 +49,7 @@ const Feedback = () => {
                             className={feedAnon ? `${styles.nameInput} ${styles.dn}` : styles.nameInput}
                             type='text'
                             placeholder="ім'я"
+                            id={"addname"}
                         />
                         <div style={{display: 'flex', alignItem: 'center'}}>
                             <p>Надіслати анонімно</p>
@@ -63,13 +67,20 @@ const Feedback = () => {
                     </div>
                     <textarea
                         placeholder="Ми завжди раді Вам"
+                        required
+                        type = "text"
+                        name="massage"
                         className={styles.feedMessage}
                         onChange={(e) => messageInputHandler({message: e.target.value})}
                     >
                             </textarea>
-                    <button onClick={sendComment} className={styles.sendFeed}>send</button>
+
+                    <button type={"submit"} className={styles.sendFeed} >send</button>
+
                 </form>
             </div>
+
+
 
             <div className={styles.feedBackContainer}>
 

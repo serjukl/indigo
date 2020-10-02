@@ -21,7 +21,7 @@ const Footer = () => {
                 </a>
             </Link>
             <div>
-                <a href="#">
+                <a href="https://goo.gl/maps/gY4MgaLfnzHjFtBU6" target='_blank'>
                     вул.Максимовича, 15 Івано-Франківськ
                 </a>
                 <p>2020</p>

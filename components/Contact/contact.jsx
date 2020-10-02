@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div className={styles.contact}>
             <div className={styles.mapContainer}>
-                <a href="#" id='contact'>вул. Максимовича 15 Івано-Франківськ</a>
+                <a href="https://goo.gl/maps/gY4MgaLfnzHjFtBU6" target='_blank'  id='contact'>вул. Максимовича 15 Івано-Франківськ</a>
             </div>
             <div className={styles.line} />
             <div className={styles.tellsContainer}>
