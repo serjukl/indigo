@@ -6,9 +6,7 @@ import Footer from "../components/Footer/footer";
 import Head from "next/head";
 
 const Partner = (props) => {
-    useEffect(() => {
-        console.log(props)
-    }, [])
+
 const goodImages = [
             {
                 src:'/images/image 5.jpg',
@@ -44,16 +42,16 @@ const goodImages = [
                               content="INDIGO EXPERT - компанія, яка має надійних партнерів в місті Івано-Франківськ"/>
                         <meta name="robots" content="index,follow"/>
                         <meta name="keywords"
-                              content="партнери INDIGO EXPER, з якими компаніями співпрацює INDIGO EXPERT "/>
+                              content="партнери INDIGO EXPERT, з якими компаніями співпрацює INDIGO EXPERT "/>
                     </Head>
                 <Nav />
-                <section className={styles.partnerContainer}>
-                    {
-                        goodImages.map((image, index) => {
-                            return <Partners key={index} item={image} />
-                        })
-                    }
-                </section>
+                {/*<section className={styles.partnerContainer}>*/}
+                {/*    {*/}
+                {/*        goodImages.map((image, index) => {*/}
+                {/*            return <Partners key={index} item={image} />*/}
+                {/*        })*/}
+                {/*    }*/}
+                {/*</section>*/}
                 <footer>
                     <Footer />
                 </footer>

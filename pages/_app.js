@@ -14,7 +14,7 @@ class MyApp extends App {
         const res = await fetch('https://indigo-99639.firebaseio.com/.json')
         const data = await res.json()
 
-        return { pageProps, data: data.test }
+        return { pageProps, data: data }
     }
 
     render() {
