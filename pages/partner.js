@@ -2,32 +2,18 @@ import React, {useEffect} from 'react';
 import Nav from "../components/Nav/nav";
 import styles from "../styles/partner.module.sass";
 import Partners from "../components/Partners/partners";
-import Footer from "../components/Footer/footer";
 import Head from "next/head";
 
 const Partner = (props) => {
 
 const goodImages = [
             {
-                src:'/images/image 5.jpg',
-                title:'Пенекрит',
-                link:'/',
-            },
-            {
-                src:'/images/image 6.jpg',
-                title:'Пенетрон',
-                link:'/',
-            },
-            {
-                src:'/images/image 7.jpg',
-                title:'Поліфлюід',
-                link:'/',
-            },
-            {
-                src:'/images/image 8.jpg',
-                title:'E - Larix',
-                link:'/',
-            },
+                src:'/images/horyzont-logo.png',
+                title:'Горизонт',
+                link:'https://horyzont.if.ua/',
+                desc: 'Напівсуха стяжка "Горизонт"\n' +
+                    'для квартир, приватних будинків, гаражів'
+            }
         ]
 
         return (
@@ -45,16 +31,13 @@ const goodImages = [
                               content="партнери INDIGO EXPERT, з якими компаніями співпрацює INDIGO EXPERT "/>
                     </Head>
                 <Nav />
-                {/*<section className={styles.partnerContainer}>*/}
-                {/*    {*/}
-                {/*        goodImages.map((image, index) => {*/}
-                {/*            return <Partners key={index} item={image} />*/}
-                {/*        })*/}
-                {/*    }*/}
-                {/*</section>*/}
-                <footer>
-                    <Footer />
-                </footer>
+                <section className={styles.partnerContainer}>
+                    {
+                        goodImages.map((image, index) => {
+                            return <Partners key={index} item={image} />
+                        })
+                    }
+                </section>
             </div>
 
         );
