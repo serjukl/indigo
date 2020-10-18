@@ -3,7 +3,6 @@ import React from 'react'
 import 'normalize.css'
 import '../styles/globals.css'
 import 'react-image-lightbox/style.css';
-import LogRocket from 'logrocket';
 
 
 class MyApp extends App {
@@ -14,7 +13,6 @@ class MyApp extends App {
         // Anything returned here can be access by the client
         const res = await fetch('https://indigo-99639.firebaseio.com/.json')
         const data = await res.json()
-        await LogRocket.init('ndlzvq/indigo');
 
         return { pageProps, data: data }
     }
