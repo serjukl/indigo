@@ -10,6 +10,7 @@
   "dependencies": {
     "firebase": "^7.21.1",
     "firebase-tools": "^8.11.2",
+    "logrocket": "^1.0.14",
     "next": "9.5.3",
     "next-images": "^1.5.0",
     "next-redux-wrapper": "^6.0.2",
