@@ -40,6 +40,7 @@ const Feedback = ({data}) => {
                 <meta name="robots" content="index,follow"/>
                 <meta name="keywords"
                       content="INDIGO EXPERT відгуки, залишити відгук про INDIGO EXPERT, INDIGO відгуки"/>
+                <meta name="google-site-verification" content="hLL3b-cRafAUAClrSSzfIPZ3ALPEBbDYHI6Xk7t9sVY" />
             </Head>
             <Nav/>
             <div className={styles.feedMain}>

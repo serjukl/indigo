@@ -151,6 +151,7 @@ const Works = () => {
                 <meta name="description" content={description} />
                 <meta name="robots" content="index,follow" />
                 <meta name="keywords" content={keywords} />
+                <meta name="google-site-verification" content="hLL3b-cRafAUAClrSSzfIPZ3ALPEBbDYHI6Xk7t9sVY" />
             </Head>
             <Nav />
             <div style={{paddingTop: '60px'}}>

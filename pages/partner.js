@@ -29,6 +29,7 @@ const goodImages = [
                         <meta name="robots" content="index,follow"/>
                         <meta name="keywords"
                               content="партнери INDIGO EXPERT, з якими компаніями співпрацює INDIGO EXPERT "/>
+                        <meta name="google-site-verification" content="hLL3b-cRafAUAClrSSzfIPZ3ALPEBbDYHI6Xk7t9sVY" />
                     </Head>
                 <Nav />
                 <section className={styles.partnerContainer}>
