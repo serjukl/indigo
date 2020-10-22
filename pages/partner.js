@@ -20,15 +20,15 @@ const goodImages = [
                 <div>
                     <Head>
                         <meta charSet="utf-8"/>
-                        <title>Партнери компанії INDIGO EXPERT</title>
+                        <title>Партнери компанії індіго експерт</title>
                         <meta name="msapplication-TileColor" content="#000000"/>
                         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
                         <meta name="theme-color" content="#000000"/>
                         <meta name="description"
-                              content="INDIGO EXPERT - компанія, яка має надійних партнерів в місті Івано-Франківськ"/>
+                              content="індіго експерт - компанія, яка має надійних партнерів в місті Івано-Франківськ"/>
                         <meta name="robots" content="index,follow"/>
                         <meta name="keywords"
-                              content="партнери INDIGO EXPERT, з якими компаніями співпрацює INDIGO EXPERT "/>
+                              content="партнери індіго експерт з якими компаніями співпрацює індіго експерт "/>
                         <meta name="google-site-verification" content="hLL3b-cRafAUAClrSSzfIPZ3ALPEBbDYHI6Xk7t9sVY" />
                     </Head>
                 <Nav />

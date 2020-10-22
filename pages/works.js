@@ -114,13 +114,13 @@ const Works = () => {
         },
     ]
     const descriptGrybok = 'Приклади робіт з боротьбою проти грибка, які виконує компанія з міста Івано-Франківськ'
-    const descriptopalennya = 'Приклади робіт та варіанти опалення для вашого дому і не тільки від компанії "INDIGO EXPERT" м. Івано-Франківськ'
-    const descriptgidro = 'Приклади робіт - метод гідроїзоляції, переваги та ефективність цього методи про це все від компанії "INDIGO EXPERT" м. Івано-Франківськ'
+    const descriptopalennya = 'Приклади робіт та варіанти опалення для вашого дому і не тільки від компанії "індіго експерт" м. Івано-Франківськ'
+    const descriptgidro = 'Приклади робіт - метод гідроїзоляції, переваги та ефективність цього методи про це все від компанії "індіго експерт" м. Івано-Франківськ'
     const titleGrybok = 'Знищення грибка'
-    const titleOpalennya = 'Варіанти опалення'
+    const titleOpalennya = 'Електричне опалення'
     const titleGidro = 'Гідроізоляція'
     const keywordsGrybok = 'Грибок, боротьба із грибком, знищення грибка, компанія по знищенню грибка м. Івано-Франківськ, компанія грибок ІФ, ІФ знищення грибка '
-    const keywordsOpalennya = 'Опалення ІФ, опалення м. Івано-Франківськ, економічне опалення, грибок опалення'
+    const keywordsOpalennya = 'Опалення ІФ, опалення м. Івано-Франківськ, економічне опалення, грибок опалення, електричне опалення'
     const keywordsGidro = 'гідроізоляція бетону в будівництві, гідроізоляція ІФ, комнанія гідроізоляція м. Івано-Франківськ'
     let images = chosen === 1 ? grybok : chosen === 2 ? opalennya : gidro
     let text = chosen === 1 ? grybokText : chosen === 2 ? opalennyaText : gidroText
@@ -144,7 +144,7 @@ const Works = () => {
         <>
             <Head>
                 <meta charSet="utf-8"/>
-                <title>{`Приклади наших робіт | ${title}`}</title>
+                <title>{`індіго експерт ${title}`}</title>
                 <meta name="msapplication-TileColor" content="#000000" />
                 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
                 <meta name="theme-color" content="#000000" />

@@ -36,10 +36,10 @@ const Feedback = ({data}) => {
                 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
                 <meta name="theme-color" content="#000000"/>
                 <meta name="description"
-                      content="INDIGO EXPERT - відгуки про нас та нашу роботу по знищенню грибка в місті Івано-Франківськ"/>
+                      content="індіго експерт - відгуки про нас та нашу роботу по знищенню грибка в місті Івано-Франківськ"/>
                 <meta name="robots" content="index,follow"/>
                 <meta name="keywords"
-                      content="INDIGO EXPERT відгуки, залишити відгук про INDIGO EXPERT, INDIGO відгуки"/>
+                      content="індіго експерт відгуки, залишити відгук про INDIGO EXPERT, INDIGO відгуки"/>
                 <meta name="google-site-verification" content="hLL3b-cRafAUAClrSSzfIPZ3ALPEBbDYHI6Xk7t9sVY" />
             </Head>
             <Nav/>

@@ -46,12 +46,12 @@ const goodImages = [
         <>
             <Head>
                 <meta charSet="utf-8"/>
-                <title>INDIGO EXPERT - професійне знищення грибка з стін, грибок на стіні</title>
+                <title>індіго експерт - професійне знищення грибка з стін, грибок на стіні</title>
                 <meta name="msapplication-TileColor" content="#000000" />
                 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
                 <meta name="theme-color" content="#000000" />
-                <meta name="description" content="знищення та виведення грибка, методи виведення грибком з стін, м. Івано-Франківськ INDIGO EXPERT" />
-                <meta name="keywords" content="знищення грибка Івано-Франківськ, вивести грибок на стіні, як здолати грибок, INDIGO EXPERT" />
+                <meta name="description" content="знищення та виведення грибка, методи виведення грибком з стін, м. Івано-Франківськ індіго експерт" />
+                <meta name="keywords" content="знищення грибка Івано-Франківськ, вивести грибок на стіні, як здолати грибок, індіго експерт" />
                 <meta name="google-site-verification" content="hLL3b-cRafAUAClrSSzfIPZ3ALPEBbDYHI6Xk7t9sVY" />
             </Head>
             <header>

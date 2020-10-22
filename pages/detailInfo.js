@@ -98,10 +98,10 @@ const DetailInfo = () => {
                 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
                 <meta name="theme-color" content="#000000"/>
                 <meta name="description"
-                      content="INDIGO EXPERT - компанія, яка відкрита у своїй діяльності і містить про себе всю детальну інформацію"/>
+                      content="індіго експерт - компанія, яка відкрита у своїй діяльності і містить про себе всю детальну інформацію"/>
                 <meta name="robots" content="index,follow"/>
                 <meta name="keywords"
-                      content="INDIGO EXPERT справка, документація компанії INDIGO EXPERT, все про компанію INDIGO EXPERT м. Івано-Франківськ, додаткова інформація про  компанія знищення грибка ІФ  "/>
+                      content="індіго експерт справка, документація компанії індіго експерт, все про компанію індіго експерт м. Івано-Франківськ, додаткова інформація про  компанія знищення грибка ІФ  "/>
                 <meta name="google-site-verification" content="hLL3b-cRafAUAClrSSzfIPZ3ALPEBbDYHI6Xk7t9sVY" />
             </Head>
             <Nav />
