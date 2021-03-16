@@ -13,12 +13,23 @@ const Works = () => {
     const[chosen, chosenHandler] = useState(1)
     const[showTextIndex, showTextIndexHandler] = useState(null)
     const grybok = [
+        'https://serving.photos.photobox.com/03472982916fcaf95cb248927912de94253a0180993bfea0b02885f74f572b20a5de28f3.jpg',
+        'https://serving.photos.photobox.com/36932029c1ff4894dd8dde583c40863811bb829897586574104201f8f9700bf4b97934df.jpg',
+        'https://serving.photos.photobox.com/231512116a9f414643e60e1e56be223eda505afa164935bfa03528678182e50c14b4f1b2.jpg',
+        'https://serving.photos.photobox.com/27653602ded0edf8f2e1ab3750be80f016a050191a030c8eb8064129b3c60e10b16fa5b1.jpg',
+        'https://serving.photos.photobox.com/9060610706c5b882efd9de8bd8c667e7c116be3d33897b076f421cbc5481f0a144f46b41.jpg',
+        'https://serving.photos.photobox.com/832738137a5466b3fb8d8c73dfe91ad11edd99717c1db13d48758694a02787c179dac258.jpg',
         'https://serving.photos.photobox.com/0284484268715ede625765155fa32a9e671d593c6ee482a01713e0eb4c7eac239672f0ca.jpg',
         'https://serving.photos.photobox.com/36748985f5acf8d6e3825a4debf53bc5b7459312506fbbbc4b2ad7db0a32b0a19348be63.jpg',
         'https://serving.photos.photobox.com/55451357e71a07dbc6734ea2bec94e2290c228932cf0736c445cc12584845a1979e217de.jpg',
         'https://serving.photos.photobox.com/94398694b285f3dfed0c52412843c3af8dedd4f7ae9387e0d1a28d48a2c8840eb0b87381.jpg',
     ]
     const opalennya = [
+        'https://serving.photos.photobox.com/08993704519c6d6ffa68ef27aa715d81f52899c83908d00804eca3d88428483ff273795c.jpg',
+        'https://serving.photos.photobox.com/93417646f5ff2c5f9ac82d50397c233975114db01ce00470a1a559f46ab1c5788eea6ed3.jpg',
+        'https://serving.photos.photobox.com/38569147bece45dcb44f7dde8456cb68f1bee14ba102e54b69c8d0d31b59df9d7b751892.jpg',
+        'https://serving.photos.photobox.com/56716463bd60688a4b211cd8e7c5f8b4453a14c07bee1f058c2c2d9cb3132e73e967bb54.jpg',
+        'https://serving.photos.photobox.com/734492519f64ec800deb0059fe05be89d7be39841bb7c33a9e15ebac0395258fe1ebcb3c.jpg',
         'https://serving.photos.photobox.com/58868418f62844213984a1386c80f1a82d5abd8138b52f7f27c02611062700c1273af382.jpg',
         'https://serving.photos.photobox.com/71792070a436c7abc31cf319bc0ecad750d87f632bf43c7d1b412f0f1ad76bc553dc89bf.jpg',
         'https://serving.photos.photobox.com/762094404be8477a08be78b7389bda2eeabea1545f4a8a689594358781a1a0790ce0b7e8.jpg',
