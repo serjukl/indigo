@@ -13,18 +13,24 @@ const Works = () => {
     const[chosen, chosenHandler] = useState(1)
     const[showTextIndex, showTextIndexHandler] = useState(null)
     const grybok = [
+        'https://serving.photos.photobox.com/67859852a10c8ec51952c1663f016e30a2fd3493b186a8ccbfa223c480e5868d81ff57a9.jpg',
+        'https://serving.photos.photobox.com/76555119e16cdf680aa3a35d85b88853d188901d27ca86e4bd05b5bbb78c90502d839010.jpg',
+        'https://serving.photos.photobox.com/71840471112cffc06d4241695bce657fc55ba179f3cb4848f7d62bbf8bb359699a6193de.jpg',
+        'https://serving.photos.photobox.com/772213046456e918682417b400803ce4dc5a52b61c1e868700a06e42385ff42a2b7beba3.jpg',
+        'https://serving.photos.photobox.com/8709483144cfc23d9a79c91742b68890beca0cd033d69aea707559a87a1b6a949cf864dd.jpg',
+        'https://serving.photos.photobox.com/64689912cef2df579c16091e47fbf04e79a040c33db25087717fc73f591f7077268a2b58.jpg',
         'https://serving.photos.photobox.com/03472982916fcaf95cb248927912de94253a0180993bfea0b02885f74f572b20a5de28f3.jpg',
         'https://serving.photos.photobox.com/36932029c1ff4894dd8dde583c40863811bb829897586574104201f8f9700bf4b97934df.jpg',
         'https://serving.photos.photobox.com/231512116a9f414643e60e1e56be223eda505afa164935bfa03528678182e50c14b4f1b2.jpg',
         'https://serving.photos.photobox.com/27653602ded0edf8f2e1ab3750be80f016a050191a030c8eb8064129b3c60e10b16fa5b1.jpg',
-        'https://serving.photos.photobox.com/9060610706c5b882efd9de8bd8c667e7c116be3d33897b076f421cbc5481f0a144f46b41.jpg',
-        'https://serving.photos.photobox.com/832738137a5466b3fb8d8c73dfe91ad11edd99717c1db13d48758694a02787c179dac258.jpg',
         'https://serving.photos.photobox.com/0284484268715ede625765155fa32a9e671d593c6ee482a01713e0eb4c7eac239672f0ca.jpg',
         'https://serving.photos.photobox.com/36748985f5acf8d6e3825a4debf53bc5b7459312506fbbbc4b2ad7db0a32b0a19348be63.jpg',
         'https://serving.photos.photobox.com/55451357e71a07dbc6734ea2bec94e2290c228932cf0736c445cc12584845a1979e217de.jpg',
         'https://serving.photos.photobox.com/94398694b285f3dfed0c52412843c3af8dedd4f7ae9387e0d1a28d48a2c8840eb0b87381.jpg',
     ]
     const opalennya = [
+        'https://serving.photos.photobox.com/61038953042496738332b114f201997907df25c5bce63eccba96841dc01a65764b6d459e.jpg',
+        'https://serving.photos.photobox.com/642787805de1718a702c34e225a6c2d442093e47df7bd64850add93e68bcf5f2d8bad37d.jpg',
         'https://serving.photos.photobox.com/08993704519c6d6ffa68ef27aa715d81f52899c83908d00804eca3d88428483ff273795c.jpg',
         'https://serving.photos.photobox.com/93417646f5ff2c5f9ac82d50397c233975114db01ce00470a1a559f46ab1c5788eea6ed3.jpg',
         'https://serving.photos.photobox.com/38569147bece45dcb44f7dde8456cb68f1bee14ba102e54b69c8d0d31b59df9d7b751892.jpg',
@@ -36,6 +42,8 @@ const Works = () => {
         'https://serving.photos.photobox.com/224874281dd655baf1ee88f14c4d15ba440eedc837c3d537047c8b65160dfc551601a594.jpg',
     ]
     const gidro = [
+        'https://serving.photos.photobox.com/9060610706c5b882efd9de8bd8c667e7c116be3d33897b076f421cbc5481f0a144f46b41.jpg',
+        'https://serving.photos.photobox.com/832738137a5466b3fb8d8c73dfe91ad11edd99717c1db13d48758694a02787c179dac258.jpg',
         'https://serving.photos.photobox.com/00384255821dbd890941c3438023762504a1642a8095b10516e868906d685664403965d6.jpg',
         'https://serving.photos.photobox.com/29615708828c6e471fa269f115317849653ed849b818243c8e6bacd66da60079e95e2fd9.jpg',
         'https://serving.photos.photobox.com/94311871ccb8c7f68c222dde5a6006f967b541539c5fa1621c3a504066fd7a0bbd864190.jpg',
