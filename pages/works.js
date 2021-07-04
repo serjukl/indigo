@@ -48,6 +48,12 @@ const Works = () => {
         'https://serving.photos.photobox.com/29615708828c6e471fa269f115317849653ed849b818243c8e6bacd66da60079e95e2fd9.jpg',
         'https://serving.photos.photobox.com/94311871ccb8c7f68c222dde5a6006f967b541539c5fa1621c3a504066fd7a0bbd864190.jpg',
     ]
+    const ozon = [
+        'https://serving.photos.photobox.com/16858971e721a641f884eb9d29221d2bd8a596f877fa81dcffe095b916133086582a4e08.jpg',
+        'https://serving.photos.photobox.com/1290151297fbfa40e8f6d3f94e86ae2e3a4bd6f2d333480de18e30cdc16ec4823a581593.jpg',
+        'https://serving.photos.photobox.com/78187428d17a49c98ad577a1ea2b52723fe10ecc0e1ce1b48656628e0daf8db81ca55fa9.jpg',
+        'https://serving.photos.photobox.com/7146071329e44f9e66289d04633a6c62986cf081d3074a07f4c9d90d38cdc1d9f4f8ef97.jpg',
+    ]
 
     const grybokText = [
         {
@@ -132,6 +138,24 @@ const Works = () => {
                 ' -появі цвілі.'
         },
     ]
+    const ozonText = [
+        {
+            title: 'Чим хороший озон?',
+            text: `
+                Озон - це газ, по своїй суті - модифікація кисню. У своїй природі озон утворюється після того
+                як крізь повітря проходить електричний розряд. Озон має дуже високу здатність окислятись. Він ефективний
+                відносно бактерій, вірусів, цвілі та грибка.
+            `
+        },
+        {
+            title: 'Для чого використовується озонування',
+            text: `
+                Дезінфекція приміщення набагато ефективніша ніж хлор. По-перше, озон сам по собі сильніший, а по-друге
+                будучи газом він проникає всюди - в щилини та пори. Нейтралізувати неприємні запахи (усуває причину 
+                а не маскує їх). Знищити всіх комах, їх гнізда і личинки. Діє навіть на пилових кліщів
+            `
+        },
+    ]
     const descriptGrybok = 'Приклади робіт з боротьбою проти грибка, які виконує компанія з міста Івано-Франківськ'
     const descriptopalennya = 'Приклади робіт та варіанти опалення для вашого дому і не тільки від компанії "індіго експерт" м. Івано-Франківськ'
     const descriptgidro = 'Приклади робіт - метод гідроїзоляції, переваги та ефективність цього методи про це все від компанії "індіго експерт" м. Івано-Франківськ'
@@ -141,8 +165,8 @@ const Works = () => {
     const keywordsGrybok = 'Грибок, боротьба із грибком, знищення грибка, компанія по знищенню грибка м. Івано-Франківськ, компанія грибок ІФ, ІФ знищення грибка '
     const keywordsOpalennya = 'Опалення ІФ, опалення м. Івано-Франківськ, економічне опалення, грибок опалення, електричне опалення'
     const keywordsGidro = 'гідроізоляція бетону в будівництві, гідроізоляція ІФ, комнанія гідроізоляція м. Івано-Франківськ'
-    let images = chosen === 1 ? grybok : chosen === 2 ? opalennya : gidro
-    let text = chosen === 1 ? grybokText : chosen === 2 ? opalennyaText : gidroText
+    let images = chosen === 1 ? grybok : chosen === 2 ? opalennya : chosen === 3 ? gidro : ozon
+    let text = chosen === 1 ? grybokText : chosen === 2 ? opalennyaText : chosen === 3 ? gidroText : ozonText
     let description = chosen === 1 ? descriptGrybok : chosen === 2 ? descriptopalennya : descriptgidro
     let title = chosen === 1 ? titleGrybok : chosen === 2 ? titleOpalennya : titleGidro
     let keywords = chosen === 1 ? keywordsGrybok : chosen === 2 ? keywordsOpalennya : keywordsGidro
