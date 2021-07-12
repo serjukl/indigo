@@ -11,6 +11,18 @@ const Works = () => {
     const[isOpen, isOpenHandler] = useState(false)
     const[photoIndex, photoIndexHandler] = useState(0)
     const[chosen, chosenHandler] = useState(1)
+    const[videos, videosHandler] = useState([
+        [
+            'https://player.vimeo.com/video/573931879',
+            'https://player.vimeo.com/video/573931916'
+        ],
+        [
+            'https://player.vimeo.com/video/573931947',
+            'https://player.vimeo.com/video/573931979',
+            'https://player.vimeo.com/video/573932004'
+        ],
+        [],[]
+    ])
     const[showTextIndex, showTextIndexHandler] = useState(null)
     const grybok = [
         'https://serving.photos.photobox.com/67859852a10c8ec51952c1663f016e30a2fd3493b186a8ccbfa223c480e5868d81ff57a9.jpg',
@@ -165,12 +177,14 @@ const Works = () => {
     const keywordsGrybok = 'Грибок, боротьба із грибком, знищення грибка, компанія по знищенню грибка м. Івано-Франківськ, компанія грибок ІФ, ІФ знищення грибка '
     const keywordsOpalennya = 'Опалення ІФ, опалення м. Івано-Франківськ, економічне опалення, грибок опалення, електричне опалення'
     const keywordsGidro = 'гідроізоляція бетону в будівництві, гідроізоляція ІФ, комнанія гідроізоляція м. Івано-Франківськ'
+    
+   
+    
     let images = chosen === 1 ? grybok : chosen === 2 ? opalennya : chosen === 3 ? gidro : ozon
     let text = chosen === 1 ? grybokText : chosen === 2 ? opalennyaText : chosen === 3 ? gidroText : ozonText
     let description = chosen === 1 ? descriptGrybok : chosen === 2 ? descriptopalennya : descriptgidro
     let title = chosen === 1 ? titleGrybok : chosen === 2 ? titleOpalennya : titleGidro
     let keywords = chosen === 1 ? keywordsGrybok : chosen === 2 ? keywordsOpalennya : keywordsGidro
-
     useEffect(() => {
         showTextIndexHandler(null)
     },[chosen])
@@ -214,7 +228,21 @@ const Works = () => {
                         Переглянути фото виконаних робіт
                     </button>
                 </div>
-
+                
+               <div className={styles.videoContainer}>
+                            
+                        {
+                            videos[chosen - 1].length > 0
+                                ? videos[chosen - 1].map((item, key) => {
+                                    return (
+                                        <iframe src={item} key={key + videos[chosen - 1].length - Math.random()} width="640" height="564" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen/>
+                                    )
+                                })
+                                : null
+                        }
+                </div> 
+                        
+                
                 {isOpen && (
                     <Lightbox
                         mainSrc={images[photoIndex]}
