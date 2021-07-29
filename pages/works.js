@@ -15,7 +15,7 @@ const Works = () => {
         [
             'https://player.vimeo.com/video/573931879',
             'https://player.vimeo.com/video/573931916',
-            'https://vimeo.com/manage/videos/580644469'
+            'https://player.vimeo.com/video/580644469'
         ],
         [
             'https://player.vimeo.com/video/573931947',
