@@ -14,13 +14,13 @@ const Works = () => {
     const[videos, videosHandler] = useState([
         [
             'https://player.vimeo.com/video/573931879',
-            'https://player.vimeo.com/video/573931916'
+            'https://player.vimeo.com/video/573931916',
+            'https://vimeo.com/manage/videos/580644469'
         ],
         [
             'https://player.vimeo.com/video/573931947',
             'https://player.vimeo.com/video/573931979',
-            'https://player.vimeo.com/video/573932004',
-            'https://vimeo.com/manage/videos/580644469'
+            'https://player.vimeo.com/video/573932004'
         ],
         [],[]
     ])
